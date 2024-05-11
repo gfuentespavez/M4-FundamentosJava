@@ -32,9 +32,13 @@ public class Main {
             //Calcular nota necesaria en base 70-30
             float examen = (float)( (5.5 - (promedio * 0.7)) / 0.3);
             System.out.println("Necesitas un: " + examen +" para aprobar");
+            if(examen > 7) {
+                System.out.println("Es imposible que apruebes esta materia.");
+            }
         }
         else if(promedio >5.5) {
             System.out.println("Aprobado.");
         }
+
         }
     }

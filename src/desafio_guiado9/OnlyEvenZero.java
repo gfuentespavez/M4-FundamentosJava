@@ -1,9 +1,9 @@
 package desafio_guiado9;
-
 import java.util.Scanner;
 
 public class OnlyEvenZero {
     public void OnlyEvenZero (Scanner sc) {
+        System.out.println("Este programa contará los n números pares, a partir del cero.");
         System.out.println("Digite um numero: ");
         int n = sc.nextInt();
         System.out.printf("Los primeros %d números pares son:\n", n);

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class SumaImpar {
     public void SumaImpar(Scanner sc) {
+        System.out.println("Este programa sumará los primeros n números impares que indiques.");
         int n;
         do {
             System.out.println("Ingrese cualquier numero: ");

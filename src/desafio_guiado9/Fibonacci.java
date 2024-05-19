@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Fibonacci {
     public void Fibonacci(Scanner sc) {
+        System.out.println("Este programa mostrará los primeros n números de la secuencia Fibonacci");
         System.out.println("Ingrese la cantidad de números de la serie Fibonacci a mostrar: ");
         int n = sc.nextInt();
         if (n <= 0) {

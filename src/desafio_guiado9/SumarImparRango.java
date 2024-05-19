@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class SumarImparRango {
     public void SumarImparRango(Scanner sc) {
+        System.out.println("Este programa sumará los números impares que se encuentren en el rango que indiques.");
         //Ingresar el límite inferior
         System.out.println("Ingrese el primer número: ");
         int min = sc.nextInt();

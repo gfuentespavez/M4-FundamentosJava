@@ -10,21 +10,25 @@ public class Main {
         CambiarWhile obj1 = new CambiarWhile();
         obj1.CambiarDoWhile();
 
-        // Solo pares
-        OnlyEven obj2 = new OnlyEven();
-        obj2.OnlyEven(sc);
+        //Solo pares desde 0
+        OnlyEvenZero obj2 = new OnlyEvenZero();
+        obj2.OnlyEvenZero();
+
+        // Solo pares desde 1
+        OnlyEven obj3 = new OnlyEven();
+        obj3.OnlyEven(sc);
 
         // Sumar números impares
-        SumaImpar obj3 = new SumaImpar();
-        obj3.SumaImpar(sc);
+        SumaImpar obj4 = new SumaImpar();
+        obj4.SumaImpar(sc);
 
         // Sumar números impares en un rango
-        SumarImparRango obj4 = new SumarImparRango();
-        obj4.SumarImparRango(sc);
+        SumarImparRango obj5 = new SumarImparRango();
+        obj5.SumarImparRango(sc);
 
         // Mostrar secuencia Fibonacci
-        Fibonacci obj5 = new Fibonacci();
-        obj5.Fibonacci(sc);
+        Fibonacci obj6 = new Fibonacci();
+        obj6.Fibonacci(sc);
 
         //Cerrar Scanner
         sc.close();

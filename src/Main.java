@@ -12,7 +12,7 @@ public class Main {
 
         //Solo pares desde 0
         OnlyEvenZero obj2 = new OnlyEvenZero();
-        obj2.OnlyEvenZero();
+        obj2.OnlyEvenZero(sc);
 
         // Solo pares desde 1
         OnlyEven obj3 = new OnlyEven();
@@ -32,5 +32,6 @@ public class Main {
 
         //Cerrar Scanner
         sc.close();
+
     }
 }

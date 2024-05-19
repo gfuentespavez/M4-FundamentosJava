@@ -3,8 +3,7 @@ package desafio_guiado9;
 import java.util.Scanner;
 
 public class SumaImpar {
-    public void SumaImpar() {
-        Scanner sc = new Scanner(System.in);
+    public void SumaImpar(Scanner sc) {
         int n;
         do {
             System.out.println("Ingrese cualquier numero: ");

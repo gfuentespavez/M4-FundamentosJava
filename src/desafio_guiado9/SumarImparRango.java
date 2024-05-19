@@ -1,8 +1,8 @@
 package desafio_guiado9;
 import java.util.Scanner;
+
 public class SumarImparRango {
-    public void SumarImparRango() {
-        Scanner sc = new Scanner(System.in);
+    public void SumarImparRango(Scanner sc) {
         //Ingresar el límite inferior
         System.out.println("Ingrese el primer número: ");
         int min = sc.nextInt();
@@ -18,6 +18,5 @@ public class SumarImparRango {
                 sum +=i;
             }
         System.out.printf("La suma de los números impares en el rango [%d, %d] es: %d\n", min, max, sum);
-        sc.close();
     }
 }

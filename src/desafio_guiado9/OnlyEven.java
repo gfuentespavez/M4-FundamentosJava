@@ -3,8 +3,7 @@ package desafio_guiado9;
 import java.util.Scanner;
 
 public class OnlyEven {
-    public void OnlyEven() {
-        Scanner sc = new Scanner(System.in);
+    public void OnlyEven(Scanner sc) {
         System.out.println("Este programa te indicará los primeros números pares que necesites.");
         System.out.println("Digite un número: ");
         int n = sc.nextInt();
@@ -14,6 +13,5 @@ public class OnlyEven {
             System.out.println(i);
             count++;
         }
-        sc.close();
     }
 }

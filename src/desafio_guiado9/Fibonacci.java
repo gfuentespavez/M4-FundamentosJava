@@ -3,8 +3,7 @@ package desafio_guiado9;
 import java.util.Scanner;
 
 public class Fibonacci {
-    public void Fibonacci() {
-        Scanner sc = new Scanner(System.in);
+    public void Fibonacci(Scanner sc) {
         System.out.println("Ingrese la cantidad de números de la serie Fibonacci a mostrar: ");
         int n = sc.nextInt();
         if (n <= 0) {

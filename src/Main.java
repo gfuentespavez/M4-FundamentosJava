@@ -1,9 +1,12 @@
+import desafio_evaluado12.NestedPatternGF;
+import desafio_evaluado12.PatternsGF;
 import dia_5.*;
 import desafio_evaluado6.*;
 import dia7.*;
 import dia_8.*;
 import desafio_guiado9.*;
 import dia_10.*;
+import desafio_guiado9.*;
 
 import java.util.Scanner;
 
@@ -43,11 +46,16 @@ public class Main {
         //Tablas de multiplicar
         Tables obj7 = new Tables();
         obj7.showTables();
-        */
 
-        //Asteriscos
         Stars obj8 = new Stars();
         obj8.Stars(sc);
+         */
+
+        PatternsGF obj8 = new PatternsGF();
+        obj8.PatternsGF(sc);
+
+        NestedPatternGF obj9 = new NestedPatternGF();
+        obj9.NestedPatternGf(sc);
 
         sc.close();
     }

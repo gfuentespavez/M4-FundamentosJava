@@ -1,5 +1,7 @@
+import desafio_evaluado12.Blah;
 import desafio_evaluado12.NestedPatternGF;
 import desafio_evaluado12.PatternsGF;
+import dia_13.ArregloPizza;
 import dia_5.*;
 import desafio_evaluado6.*;
 import dia7.*;
@@ -38,18 +40,18 @@ public class Main {
         // Mostrar secuencia Fibonacci
         Fibonacci obj6 = new Fibonacci();
         obj6.Fibonacci(sc);
-         */
+
 
         //Cerrar Scanner
 
-        /*
+
         //Tablas de multiplicar
         Tables obj7 = new Tables();
         obj7.showTables();
 
         Stars obj8 = new Stars();
         obj8.Stars(sc);
-         */
+
 
         PatternsGF obj8 = new PatternsGF();
         obj8.PatternsGF(sc);
@@ -57,6 +59,14 @@ public class Main {
         NestedPatternGF obj9 = new NestedPatternGF();
         obj9.NestedPatternGf(sc);
 
+        Blah obj10 = new Blah();
+        obj10.Blah();
+
         sc.close();
+        */
+
+        ArregloPizza obj11 = new ArregloPizza();
+        obj11.ArregloPizza(sc);
+
     }
 }

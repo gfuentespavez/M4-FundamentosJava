@@ -3,7 +3,6 @@ package desafio_evaluado12;
 import java.util.Scanner;
 
 public class NestedPatternGF {
-
     public void NestedPatternGf(Scanner sc) {
 
         // Rectángulo con límites

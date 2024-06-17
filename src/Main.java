@@ -1,3 +1,6 @@
+import desafio_evaluado15.MultiplosDeTres;
+import desafio_evaluado15.SmartWatch;
+import desafio_evaluado15.VisitasGF;
 import dia_14.ArregloBidimensional;
 import dia_15.*;
 import dia_8.*;
@@ -91,9 +94,19 @@ public class Main {
 
         Indice obj20 = new Indice();
         obj20.Indice();
-                 */
+
         BuscarDestruir obj21 = new BuscarDestruir();
         obj21.BuscarDestruir(sc);
+         */
+
+        VisitasGF obj22 = new VisitasGF();
+        obj22.promedio();
+
+        SmartWatch obj23 = new SmartWatch();
+        obj23.SmartWatch();
+
+        MultiplosDeTres obj24 = new MultiplosDeTres();
+        obj24.MultiplosDeTres();
 
         sc.close();
     }

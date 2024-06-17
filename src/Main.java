@@ -1,4 +1,5 @@
 import dia_14.ArregloBidimensional;
+import dia_15.*;
 import dia_8.*;
 import desafio_guiado9.*;
 import dia_10.*;
@@ -77,9 +78,22 @@ public class Main {
         Iterando obj16 = new Iterando();
         obj16.Iterando();
 
-         */
         ArregloBidimensional obj17 = new ArregloBidimensional();
         obj17.ArregloBidimensional();
+
+        ArraysIntro obj18 = new ArraysIntro();
+        obj18.ArraysIntro();
+
+
+        ArregloCocina obj19 = new ArregloCocina();
+        obj19.ArregloCocina(sc);
+
+
+        Indice obj20 = new Indice();
+        obj20.Indice();
+                 */
+        BuscarDestruir obj21 = new BuscarDestruir();
+        obj21.BuscarDestruir(sc);
 
         sc.close();
     }

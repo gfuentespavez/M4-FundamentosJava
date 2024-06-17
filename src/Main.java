@@ -1,22 +1,22 @@
-import desafio_evaluado12.Blah;
-import desafio_evaluado12.NestedPatternGF;
-import desafio_evaluado12.PatternsGF;
-import dia_13.ArregloPizza;
-import dia_5.*;
-import desafio_evaluado6.*;
-import dia7.*;
+import dia_14.ArregloBidimensional;
 import dia_8.*;
 import desafio_guiado9.*;
 import dia_10.*;
-import desafio_guiado9.*;
+import desafio_evaluado12.*;
+import dia_13.AgregarPar;
+import dia_13.ArregloPizza;
+import dia_13.ArregloSuma;
+import dia_14.Iterando;
+import dia_14.ListaPlatos;
+import dia_14.Metodos;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        /*
 
-        /*Día 9
         // CambiarWhile
         CambiarWhile obj1 = new CambiarWhile();
         obj1.CambiarDoWhile();
@@ -41,9 +41,7 @@ public class Main {
         Fibonacci obj6 = new Fibonacci();
         obj6.Fibonacci(sc);
 
-
         //Cerrar Scanner
-
 
         //Tablas de multiplicar
         Tables obj7 = new Tables();
@@ -52,9 +50,8 @@ public class Main {
         Stars obj8 = new Stars();
         obj8.Stars(sc);
 
-
-        PatternsGF obj8 = new PatternsGF();
-        obj8.PatternsGF(sc);
+        PatternsGF obj999 = new PatternsGF();
+        obj999.PatternsGF(sc);
 
         NestedPatternGF obj9 = new NestedPatternGF();
         obj9.NestedPatternGf(sc);
@@ -62,11 +59,28 @@ public class Main {
         Blah obj10 = new Blah();
         obj10.Blah();
 
-        sc.close();
-        */
-
         ArregloPizza obj11 = new ArregloPizza();
         obj11.ArregloPizza(sc);
 
+        ArregloSuma obj12 = new ArregloSuma();
+        obj12.ArregloSuma();
+
+        AgregarPar obj13 = new AgregarPar();
+        obj13.AgregarPar();
+
+        Metodos obj14 = new Metodos();
+        obj14.Metodos(sc);
+
+        ListaPlatos obj15 = new ListaPlatos();
+        obj15.ListaPlatos(sc);
+
+        Iterando obj16 = new Iterando();
+        obj16.Iterando();
+
+         */
+        ArregloBidimensional obj17 = new ArregloBidimensional();
+        obj17.ArregloBidimensional();
+
+        sc.close();
     }
 }

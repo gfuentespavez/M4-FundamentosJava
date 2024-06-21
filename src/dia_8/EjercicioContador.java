@@ -3,8 +3,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class EjercicioContador {
-    public void EjercicioContador () {
-        Scanner sc = new Scanner(System.in);
+    public void EjercicioContador (Scanner sc) {
         System.out.println("Ingrese un número de inicio");
         int i = sc.nextInt();
         while (i > 0) {
@@ -16,6 +15,5 @@ public class EjercicioContador {
                 e.printStackTrace();
             }
         }
-        sc.close();
     }
 }

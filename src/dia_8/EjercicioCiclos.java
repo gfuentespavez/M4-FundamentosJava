@@ -3,8 +3,8 @@ package dia_8;
 import java.util.Scanner;
 
 public class EjercicioCiclos {
-    public void EjercicioCiclos() {
-        Scanner sc = new Scanner(System.in);
+    public void EjercicioCiclos(Scanner sc) {
+
         //Primer número
         System.out.println("Ingrese el primer numero: ");
         double num1 = sc.nextInt();
@@ -52,7 +52,6 @@ public class EjercicioCiclos {
                 case 5:
                 //Salir
                     System.out.println("Saliendo...");
-                    sc.close();
                     return; //Termina el programa
                 default:
                     System.out.println("Opcion no valida");

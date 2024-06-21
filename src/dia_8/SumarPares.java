@@ -3,8 +3,7 @@ package dia_8;
 import java.util.Scanner;
 
 public class SumarPares {
-    public void calcularEvenSum() {
-        Scanner sc = new Scanner(System.in);
+    public void SumarPares(Scanner sc) {
         System.out.println("Ingrese cualquier numero: ");
         int n = sc.nextInt();
         int i = 0;
@@ -16,6 +15,5 @@ public class SumarPares {
             }
         }
         System.out.printf("La suma de los números pares hasta %d es: %d\n", n, suma);
-        sc.close();
     }
 }

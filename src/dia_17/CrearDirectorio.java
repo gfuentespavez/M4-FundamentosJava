@@ -1,7 +1,6 @@
 package dia_17;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CrearDirectorio {

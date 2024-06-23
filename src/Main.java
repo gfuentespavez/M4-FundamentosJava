@@ -360,6 +360,7 @@ public class Main {
 
                         subChoice = sc.nextInt();
                         sc.nextLine();
+
                         switch (subChoice) {
                             case 1:
                                 CrearDirectorio cd = new CrearDirectorio();
@@ -378,13 +379,19 @@ public class Main {
                                 break;
 
                             case 3:
-                                System.out.println("Ingrese el nombre del directorio a crear: ");
-                                String directoryName = sc.nextLine();
+                                CrearArchivo cg = new CrearArchivo();
 
-                                System.out.println("Ingrese el nombre del archivo a crear: ");
-                                String fileName = sc.nextLine();
+                                // Crear directorio
+                                System.out.println("Introduzca el nombre del directorio");
+                                String nombreDirectorio = sc.nextLine();
+                                cg.newDirectory(nombreDirectorio);
 
-                                ArrayList<String> contenido = new ArrayList<String>();
+                                // Crear archivo
+                                System.out.println("Introduzca el nombre del archivo (con extensión, por ejemplo, texto.txt)");
+                                String nombreArchivo = sc.nextLine();
+
+                                // Contenido en ArrayList
+                                ArrayList<String> contenido = new ArrayList<>();
                                 contenido.add("Perro");
                                 contenido.add("Gato");
                                 contenido.add("Juan");
@@ -396,9 +403,13 @@ public class Main {
                                 contenido.add("Daniel");
                                 contenido.add("Camila");
 
-                                CrearArchivo ca = new CrearArchivo();
-                                ca.NewDirectory(directoryName);
-                                ca.createNewFile(directoryName, fileName, contenido);
+                                cg.createNewFile(nombreDirectorio, nombreArchivo, contenido);
+
+                                //Buscar archivo
+                                //cg.comprobarArchivo(nombreDirectorio);
+
+                                // Buscar texto con repeticiones
+                                cg.buscarTexto(nombreDirectorio, nombreArchivo);
                                 break;
 
                             case 0:

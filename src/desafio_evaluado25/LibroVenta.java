@@ -15,7 +15,6 @@ public class LibroVenta {
         this.fechaVenta = fechaVenta;
     }
     //Getter & Setter
-
     public String getNombreVenta() {
         return nombreVenta;
     }
@@ -41,7 +40,7 @@ public class LibroVenta {
         if(!dir.exists()) {
             dir.mkdir();//Crea el directorio si no existe.
         }
-
+        //Contenido a escribir en el archivo
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivo, true))) {
             writer.write("Patente del vehículo: " + vehiculo.getPatente() + "\n");
             writer.write("Edad del cliente: " + cliente.getEdadCliente() + "\n");
@@ -51,6 +50,8 @@ public class LibroVenta {
             e.printStackTrace();
         }
     }
+
+    //Método main
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

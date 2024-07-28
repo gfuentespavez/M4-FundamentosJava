@@ -1,4 +1,0 @@
-Patente del vehículo: TXTX99
-Edad del cliente: 53
-Fecha de la venta: 2024-12-31
-Nombre de la venta: Toyota Hilux

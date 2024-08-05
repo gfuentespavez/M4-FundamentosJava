@@ -19,13 +19,19 @@ public class Main {
             System.out.println(estudiante.toString());
         }*/
         ArrayList<Persona> lista = new ArrayList<>();
-        lista.add(new Estudiante("1", "Juan", true));
-        lista.add(new Estudiante("2", "Andrés", true));
-        lista.add(new Estudiante("3", "Juan", false));
+        lista.add(new Estudiante(1500, "1", "Juan", true));
+        lista.add(new Estudiante(2000, "2", "Andrés", true));
+        lista.add(new Estudiante(3500, "3", "Juan", false));
         lista.add(new Profesor("10", "José", true));
 
+        /*
         for(Persona individuo : lista) {
             System.out.println(individuo.toString());
+            */
+        for(Persona individuo : lista) {
+            Estudiante estudiante = (Estudiante) individuo;
+            System.out.println(individuo.getClass().getSimpleName());
+            System.out.println(estudiante.getDeuda());
         }
     }
 }

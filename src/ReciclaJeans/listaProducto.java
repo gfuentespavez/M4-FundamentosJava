@@ -1,4 +1,4 @@
-package IndianaJeans;
+package ReciclaJeans;
 
 public class listaProducto {
 }

@@ -27,6 +27,8 @@ public class Menu {
             opcion = scanner.nextInt();
             scanner.nextLine(); // Consumir la línea nueva
 
+
+
             switch (opcion) {
                 case 1:
                     listarProductos();
@@ -54,6 +56,7 @@ public class Menu {
                     break;
                 case 0:
                     System.out.println("Saliendo...");
+                    scanner.close();
                     break;
                 default:
                     System.out.println("Opción inválida.");

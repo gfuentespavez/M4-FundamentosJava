@@ -1,7 +1,9 @@
 package ReciclaJeans;
 
+import java.util.UUID;
+
 public class Producto {
-    //Atributos
+    // Atributos
     private String articulo;
     private String precio;
     private String descripcion;
@@ -10,22 +12,27 @@ public class Producto {
     private String marca;
     private String color;
 
-    //Constructores
+    // Constructores
     public Producto(String articulo, String precio, String descripcion, String codigo, String talla, String marca, String color) {
         this.articulo = articulo;
         this.precio = precio;
         this.descripcion = descripcion;
-        this.codigo = codigo;
+        this.codigo = (codigo != null && !codigo.isEmpty()) ? codigo : generarCodigo(); // Genera un código si no se proporciona
         this.talla = talla;
         this.marca = marca;
         this.color = color;
     }
 
     public Producto() {
-
+        this.codigo = generarCodigo(); // Genera un código aleatorio por defecto
     }
-    //Getters y setters
 
+    // Método para generar un código aleatorio
+    private String generarCodigo() {
+        return UUID.randomUUID().toString();
+    }
+
+    // Getters y setters
     public String getArticulo() {
         return articulo;
     }
@@ -55,7 +62,7 @@ public class Producto {
     }
 
     public void setCodigo(String codigo) {
-        this.codigo = codigo;
+        this.codigo = (codigo != null && !codigo.isEmpty()) ? codigo : generarCodigo(); // Reasigna si se proporciona un nuevo código
     }
 
     public String getTalla() {
@@ -82,8 +89,7 @@ public class Producto {
         this.color = color;
     }
 
-    //Método toString()
-
+    // Método toString()
     @Override
     public String toString() {
         return "Producto{" +

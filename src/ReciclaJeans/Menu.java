@@ -82,9 +82,6 @@ public class Menu {
         System.out.print("Ingrese la descripción: ");
         producto.setDescripcion(scanner.nextLine());
 
-        System.out.print("Ingrese el código: ");
-        producto.setCodigo(scanner.nextLine());
-
         System.out.print("Ingrese la talla: ");
         producto.setTalla(scanner.nextLine());
 
